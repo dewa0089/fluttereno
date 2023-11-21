@@ -1,0 +1,10 @@
+^D:\PAB_DEWAIF3B\CANDI1-DEWA0089\WINDOWS\FLUTTER\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/pab_dewaif3b/candi1-dewa0089/windows -BD:/pab_dewaif3b/candi1-dewa0089/build/windows --check-stamp-file D:/pab_dewaif3b/candi1-dewa0089/build/windows/flutter/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

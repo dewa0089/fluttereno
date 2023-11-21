@@ -1,0 +1,10 @@
+^D:\PAB_DEWAIF3B\CANDI1-DEWA0089\BUILD\WINDOWS\CMAKEFILES\9D8E83810CA9CCB2E09D4392029A14B6\INSTALL_FORCE.RULE
+setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
